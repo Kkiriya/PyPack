@@ -1,0 +1,27 @@
+[project]
+name = "PyPack"
+version = "0.0.0"
+description = "A collection of python fonctions i often use"
+readme = "README.md"
+authors = [
+    { name="KKiriya", email="69686396+Kkiriya@users.noreply.github.com"}
+]
+keywords = ["python", "utilities", "helpers"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.13.1"
+dependencies = [
+    "colorama>=0.4.6", # for ui.py
+    "ruff>=0.15.4", # for fast linting and proper code
+    "pytest>=9.0.2", # For testing
+    "iniconfig>=2.3.0", # came w/ pytest
+    "packaging>=26.0", # came w/ pytest
+    "pluggy>=1.6.0", # came w/ pytest
+    "Pygments>=2.19.2", # came w/ pytest
+]
+[build-system]
+requires = ["setuptools>=65.5", "wheel"]
+build-backend = "setuptools.build_meta"
